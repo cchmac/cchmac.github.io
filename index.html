@@ -1,4 +1,3 @@
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -6,18 +5,258 @@
 
 <!-- meta data. -->
 <title>Quick Word Ultimate</title>
-<meta name="description" content="Quick Word Ultimate is a beautiful, easy-to-use and powerful word processor that is designed to make writing convenient, efficient and comfortable" />
+<meta name="description" content="Quick Word Ultimate is a beautiful, easy-to-use and powerful word processor that is designed to make writing convenient, efficient and comfortable." />
+
+<meta property="og:site_name" content="Quick Word Ultimate" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Quick Word Ultimate" />
+<meta property="og:description" content="Quick Word Ultimate is a beautiful, easy-to-use and powerful word processor that is designed to make writing convenient, efficient and comfortable." />
+<meta property="og:image" content="appres/og.png" />
+	
+<!-- icon -->
+<link rel="icon"          href="img/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    
+<!-- css -->
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+
+
+<!-- Define My Own functions here. -->
+<script type="text/javascript">
+	function toggleAllFeaturesContainer()
+	{
+		var arrowElem = document.getElementById('all_features_arrow');
+		var featuresElem = document.getElementById('all_features_div');
+		if (featuresElem.className == "show_div") {
+			featuresElem.className = "hide_div";
+			arrowElem.innerHTML = "&gt;";
+		}
+		else {
+			featuresElem.className = "show_div";
+			arrowElem.innerHTML = "v";
+		}
+	}
+</script>
+<!-- End of My Own functions -->
+
 
 
 </head>
 
 <body>
+	<div class="container">
+		<div class="fixed_header_container">
+			<div class="header_contents_container">
+				<div class="header_left">
+					<table cellpadding="0" cellspacing="0">
+						<tr>
+							<td>
+								<img id="header_app_logo" src="appres/icon64.png" alt="Quick Word Ultimate Logo" />
+							</td>
+							
+							<td>
+								<div id="header_app_spacing"></div>
+							</td>
+							
+							<td>
+								<p id="header_app_name">Quick Word Ultimate</p>
+							</td>
+						</tr>
+					</table>
+				</div>
+				
+				<!-- download and buy -->
+				<div class="header_right">
+					<table cellpadding="0" cellspacing="0">
+						<tr>
+							<td>
+								<!-- MUST NOT CHANGE this id, because it is used in Google Tag Manager -->
+								<a id="header_download_button" href="https://itunes.apple.com/us/app/quick-word-ultimate/id694553329?ls=1&mt=12" target="_blank">Download</a>
+							</td>
+							
+							<td>
+								<!-- MUST NOT CHANGE this id, because it is used in Google Tag Manager -->
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
 
-<p>
-Contact us:<br />
-macapps@foxmail.com
-</p>
+		<div class="main_container">
+			<!-- intro section -->
+			<div class="item_intro_container">
+				<div class="item_contents_container">
+					<table id="intro_main_table" cellpadding="0" cellspacing="0">
+						<tr>
+							<td style="width: 36%;">
+								<!-- big app logo -->
+								<img id="intro_app_logo" src="appres/icon300.png" alt="Quick Word Ultimate App Logo" />
+							</td>
+							<td>
+								<!-- intro texts: App Name, subtitle, app description, download button. -->
+								<table cellpadding="0" cellspacing="0">
+									<tr>
+										<td><p id="intro_app_name">Quick Word Ultimate</p></td>
+									</tr>
+									
+									<tr>
+										<td><p id="intro_app_subtitle">A beautiful, easy-to-use and powerful word processor that is designed to make writing convenient.</p></td>
+									</tr>
+									
+									<tr>
+										<td><p id="intro_app_desc">Quick Word Ultimate is ease, fast and uncluttered. It starts up quickly, has a live word count, easy on the eyes and you can export all the common formats: .pdf, .docx, .doc, .xml, .odt, .rtf, .rtfd, .webarchive, .txt and more. To create the tables and insert the pictures make your document more rich and colorful. Automatic save function let you don't have to worry about losing data.</p></td>
+									</tr>
+									
+									<tr>
+										<td>
+											<table cellpadding="0" cellspacing="0">
+												<tr>
+													<td>
+														<!-- MUST NOT CHANGE this id, because it is used in Google Tag Manager -->
+														<!-- Not show the download butoton in inro section. -->
+														<!--
+														<a id="intro_download_button" href="https://itunes.apple.com/us/app/quick-word-ultimate/id694553329?ls=1&mt=12" target="_blank">Download</a>
+														-->
+													</td>
 
+													<td>
+														<!-- MUST NOT CHANGE this id, because it is used in Google Tag Manager -->
+														
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									
+								</table>
+								
+							</td>
+						</tr>
+					</table>
+					
+				</div>
+			</div>
+				
+			<!-- detail item1 -->
+			<div class="item_container">
+				<div class="item_contents_container">
+					<!-- header -->
+					<div class="detail_item_header_container">
+						<p>Great word processor</p>
+					</div>
+
+					<!-- subtitle -->
+					<div class="detail_item_subtitle_container">
+						<p></p>
+					</div>
+
+					<!-- image -->
+					<div class="detail_item_image_container">
+						<img class="detail_item_screenshot" src="appres/ss1.jpg" alt="Quick Word Ultimate Screenshot 1" />
+					</div>
+					
+				</div>
+			</div>
+						
+			<!-- SEE ALL FEATURES -->
+			<div class="item_alt_container">
+				<div class="item_all_features_container">
+					
+					<!-- <img id="all_features_icon" src="img/features.png" alt="All Features" /> -->
+					
+					<button id="all_features_button" type="button" onclick="toggleAllFeaturesContainer();">Complete feature list <span id="all_features_arrow">&lt;</span></button>
+					
+					<div id="all_features_div" class="show_div"> <!-- MUST NOT CHANGE this id, because it is used in Google Tag Manager -->
+						<!-- all-features goes here -->
+						<h4>Great word processor</h4>
+						<ul>
+						<li>Paragraph and character styles</li>
+						<li>Automatically format bulleted or numbered lists</li>
+						<li>Flexible structure for creating any type of document with section, layout, and page breaks</li>
+						<li>Table of contents</li>
+						<li>Word processing utilities including word count and automatic page numbering</li>
+						</ul>
+
+						<h4>Compatibility and sharing</h4>
+						<ul>
+						<li>Export Microsoft Word documents</li>
+						<li>Export files to HTML with/without styles, PDF, RTF/DOC with pictures.</li>
+						<li>Support for all image formats (.jpg, .jpeg, .gif, .png and more)</li>
+						</ul>
+
+						<h4>Powerful writing tools</h4>
+						<ul>
+						<li>Free-form headers and footers</li>
+						<li>Date-stamped backups</li>
+						<li>Selection of text by text style, paragraph style, color, etc</li>
+						<li>Find panel allows regular expressions (pattern matching)</li>
+						<li>Automatic save function let you don't have to worry about losing data</li>
+						<li>It is able to automatically format bulleted or numbered lists to make your documents crisp and clear</li>
+						<li>Find and Replace feature make your documents easily search</li>
+						</ul>
+
+						<h4>Supported formats</h4>
+						<ul>
+						<li>Word 2007 (.docx)</li>
+						<li>Word 97 (.doc)</li>
+						<li>Word 2003 xml (.xml)</li>
+						<li>OpenDocument (.odt)</li> 
+						<li>Rich Text with Graphics Document (.rtfd)</li>
+						<li>Web Archive (.webarchive)</li>
+						<li>Rich Text Format (.rtf)</li>
+						<li>Text Document (.txt)</li>
+						<li>Text (you provide extension)</li>
+						<li>Open Document (.odt)</li>
+						</ul>
+			
+
+					
+						<!-- end of all-features -->	
+					</div>
+				</div>
+			</div>
+			
+			<!-- footer detail item -->
+			<div class="item_footer_container">
+				<div class="footer_contents_container">
+					
+					<!-- about area -->
+					<div class="footer_about_container">
+						<table cellpadding="0" cellspacing="10">
+							<tr>
+								<td>
+									<p>Contact us: <a class="footer_link_button" href="mailto:macapps@foxmail.com">macapps@foxmail.com</a></p>
+								</td>
+								
+								<td>
+									<p><a class="footer_link_button" href="p.html" target="_blank">Privacy Policy</a></p>
+								</td>
+								
+								<td>
+									<p id="footer_copyright_item">© 2019 AppLife Tech</p>
+								</td>
+							</tr>
+						</table>
+					</div>
+					
+					<!-- registered description -->
+					<div class="footer_reg_desc_container">
+						<p>
+							Copyright © 2019 AppLife Tech. All Rights Reserved. Apple, the Apple logo, and Mac are registered trademarks or trademarks of Apple Inc. in the U.S. and/or other countries. Microsoft, Windows, and Office are either registered trademarks or trademarks of Microsoft Corporation in the United States and/or other countries. AppLife Tech has no affiliation with Microsoft Corporation or the Microsoft Office software application.
+						</p>
+					</div>
+					
+				</div>
+			</div>
+			
+			
+			
+		</div> <!-- main container -->
+	</div> <!-- container -->
+		
+	
+	<!-- Release Main Page V0.0.4 (v2019.05.16 20.02) -->
 </body>
 
 </html>
